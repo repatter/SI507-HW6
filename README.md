@@ -1,3 +1,5 @@
+Reine Patterson
+
 # JavaScript assignment
 
 ## Some useful resources
@@ -25,7 +27,7 @@ This experience is *not in any way* about becoming an expert JavaScript programm
 
 ### Specifically
 
-Below are a bunch of questions and indications of things to do. For each indication of something to do with code, there is also an accompanying question to answer or brief explanation to give. 
+Below are a bunch of questions and indications of things to do. For each indication of something to do with code, there is also an accompanying question to answer or brief explanation to give.
 
 **To complete and submit this assignment, you should:**
 
@@ -46,7 +48,7 @@ Below are a bunch of questions and indications of things to do. For each indicat
 
 * In answering questions, assume all of the questions include a *explain briefly* note -- you do NOT have to, and should not, write extended paragraphs. Be as concise as you can and explain in your own words. Don't worry about "whether it's enough" -- just worry about conveying your understanding so you can read it later, or even give it to someone else, and the answers will help/make sense.
 
-* It is not acceptable to copy and paste answers from the internet and submit them as your own. If you cite things, make sure you provide a citation, including to links. If you get information from a resource and rephrase it so you're basically explaining an idea, that's just fine for an explanatory purpose in this assignment, but you *must* cite any quotes or examples that aren't yours. 
+* It is not acceptable to copy and paste answers from the internet and submit them as your own. If you cite things, make sure you provide a citation, including to links. If you get information from a resource and rephrase it so you're basically explaining an idea, that's just fine for an explanatory purpose in this assignment, but you *must* cite any quotes or examples that aren't yours.
 
 * **For grading:** we are grading on...
 	* Following the instructions
@@ -57,7 +59,7 @@ Below are a bunch of questions and indications of things to do. For each indicat
 
 ### Names of people you have worked with on this assignment
 * List everyone's names and uniqnames who have worked on this assignment with you, **including your own name, but make sure YOUR name is first and bold**
-* Like this: 
+* Like this:
 * **Jackie Cohen (jczetta)**
 * Yea-Ree Chang (cyearee)
 * Ruchi Ookalkar (ruchido)
@@ -79,26 +81,34 @@ Some JavaScript code
 
 * **What does a code comment look like in JavaScript? What character/s do you have to put before a comment?**
 
+The code comment is in a lighter font and readable by the programmer, although not technically included in the code. It requires two forward slashes (//) before the comment.
+
 * **Explain what needs to happen to get a JavaScript program to "run", given the JavaScript you've seen in this assignment.**
 
 * **What functions in JavaScript seem to be similar in function to the `print` function in Python? (There are two.) Why might you use one and not the other? Explain briefly.**
 
+Console.log and Alert. One might use console.log for debugging because it will appear in the terminal. One might use Alert to let the user see the message.
+
 * **What code would have to comment out to get rid of the pop-up box when you load the page? (Related to the last question.) Do that in the code file, and then, add code so that a text box will appear that contains the current date and time! *HINT:* Look through the rest of the code first...**
+
+One would have to comment out any invocation of the alert function.
 
 * **How can you put your own name at the top where it currently says "A name"? Explain very briefly how to do so, and replace `A name` in the web page with your own name.**
 
-* **What does the word `document` represent in this code? Explain briefly.**
+Type your name where it says "a name"
 
-* **What is happening in line 12 ( 
+* **What does the word `document` represent in this code? Explain briefly.**
+It represents the web page.
+* **What is happening in line 12 (
 		`document.querySelector('#items').innerHTML = document.getElementsByTagName('li').length`
 )? Explain, briefly (<= 2 sentences).**
-
+It is searching the object for "items", then assigning it to the length of a list of items (elements with the tag name "li").
 * **What color would the background of this page be <u>if there were no JavaScript in this page</u>?**
-
+It would be transparent.
 * **Why are there a couple of gray boxes on the screen with a different colored border? How could you edit this code to make them a different color? Explain briefly. Then edit the code to make those boxes some shade of blue, of your choosing.**
 
 * **Edit the code so that, if you highlight `McGill University` and copy it, you see the text `O Canada` near the bottom of the page. Briefly explain why you made the edits that you did -- how did you know/figure out what to do?**
-
+I saw the code had a Go Blue cheer for U-M so I changed the cheer to O Canada and used the copy function on McGill University instead.
 * **In the original code, when you click the button that says `Wow`, you see a text box! Wow. Explain briefly in your own words why the following code causes that to happen:**
 
 ```js
@@ -112,7 +122,7 @@ function handleClick(){
 <button onclick=handleClick() id="wow-button">Wow</button>
 ```
 
-
+The alert function creates a text box that the user can see in the browser. The function handleClick uses the alert function and handleClick is assigned to the clicking of the wow button.
 
 * **Knowing what you learned from the previous question, add code/markup to the `jsPracticeLab.html` file *so that* there is a button with the text `Spring Equinox 2019` on it somewhere on the page, and when that button is clicked, a text box containing the text `March 20, 2019` appears. (There's no function -- that I am aware of -- to automatically get this info, you've got to type it yourself.)**
 
@@ -123,20 +133,19 @@ function handleClick(){
 * **Check out the file `jquerylib_submit_example.html`. This is an example of code that uses a package called `jQuery` (and this will need you to have an internet connection to run it properly, although the other file does not). Check out resources above for more on jQuery!**
 
 * **When you enter input that isn't valid, you see an error that is red. Why is the error in red? Why is the response for valid inputs blue?**
-
+Line 9 sets the color for an error in red. Line 12 sets the color for ".good" as blue.
 * **What is this line `var regex = /^[a-zA-Z]+$/;` helping with? And if you googled something to figure that out, what did you google, and what, briefly, did you learn? (If you didn't need to google, you can leave that out, but explain briefly what that line is helping the program do, anyway.)**
-
+ This line tests that the input does not include any letter characters, uppercase or lowercase. I Googled var regex = /^[a-zA-Z]+$/; and learned that Var regex uses shorthand codes to serve as a kind of check for input, to make sure an input matches the necessary criteria.
 * **What's different about the syntax of conditional statements in JavaScript, compared to Python?**
-
+The code within if/else statements doesn't need to be indented, instead the action it needs to take is located within {} brackets.
 * **What do you think the `10000` refers to in the code `.fadeOut(10000)`?**
-
+Fade out gradually fades out the element, until it is hidden. 10000 means the fade out will take 10 seconds.
 * **What do you think is going on with the following code at the beginning of the program? Note that the most important thing to do for answering this question is to be thoughtful and clear, not to be absolutely correct:**
-
+This causes a type of event when a form is submitted, testing if the form adheres to the specified guidelines and responding with Nice! or Not valid!
 ```js
 $(document).ready(function(){
     $("form").submit(function(event){
 ```
-
 
 * **Add some code to the `jquerylib_submit_example.html` file so that, if the input is valid and is specifically the text `hello`, rather than the visible output being `Nice!` in blue, the visible output should be `Hello to you too!`, also in blue, just like `Nice!` is.**
 	* *HINT:* You'll have to make some changes to the conditional statement, and possibly look up some JavaScript conditional syntax. You'll also need to look carefully at what generates visible output right now.
